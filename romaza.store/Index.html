@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Romaza.Store — Beauty • Fragrance • Cosmetics</title>
+<meta name="description" content="Romaza.Store — curated perfumes, makeup and bags. Order directly via WhatsApp." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#top" class="navbar__brand">
+      <span class="navbar__logo">Romaza<span class="navbar__logo-dot">.</span>Store</span>
+      <span class="navbar__tagline">Beauty • Fragrance • Cosmetics</span>
+    </a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="#perfumes" data-category="perfumes">Perfumes</a>
+      <a href="#makeup" data-category="makeup">Makeup</a>
+      <a href="#bags" data-category="bags">Bags</a>
+      <a href="#offers" data-category="offers">Offers</a>
+      <a href="#bestsellers" data-category="bestsellers">Best Sellers</a>
+    </nav>
+
+    <button class="navbar__menu-btn" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="navbar__mobile" id="navbarMobile">
+    <a href="#perfumes" data-category="perfumes">Perfumes</a>
+    <a href="#makeup" data-category="makeup">Makeup</a>
+    <a href="#bags" data-category="bags">Bags</a>
+    <a href="#offers" data-category="offers">Offers</a>
+    <a href="#bestsellers" data-category="bestsellers">Best Sellers</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero__media">
+      <img
+        id="heroImage"
+        src="https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=1600&auto=format&fit=crop"
+        alt="A signature Romaza fragrance bottle, softly lit"
+        loading="eager"
+      />
+    </div>
+    <div class="hero__content">
+      <p class="eyebrow">New Season Edit</p>
+      <h1 class="hero__title">Beauty, held to a<br class="hero__break"> higher light.</h1>
+      <p class="hero__subtitle">Considered fragrance, makeup and accessories — chosen carefully, worn confidently.</p>
+      <a href="#products" class="btn btn--gold">Explore the Collection</a>
+    </div>
+  </section>
+
+  <!-- ===================== CATEGORY FILTER ===================== -->
+  <section class="category-filter" id="products">
+    <div class="category-filter__inner" id="categoryPills" role="tablist" aria-label="Filter products by category">
+      <button class="pill is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="pill" data-filter="perfumes" role="tab" aria-selected="false">🌸 Perfumes</button>
+      <button class="pill" data-filter="makeup" role="tab" aria-selected="false">💄 Makeup</button>
+      <button class="pill" data-filter="bags" role="tab" aria-selected="false">👜 Bags</button>
+      <button class="pill" data-filter="offers" role="tab" aria-selected="false">🔥 Offers</button>
+      <button class="pill" data-filter="bestsellers" role="tab" aria-selected="false">⭐ Best Sellers</button>
+    </div>
+  </section>
+
+  <!-- ===================== BEST SELLERS ===================== -->
+  <section class="product-section" id="bestsellers" data-section="bestsellers">
+    <div class="section-heading">
+      <p class="eyebrow">⭐ Best Sellers</p>
+      <h2>What everyone keeps reaching for</h2>
+      <span class="gold-rule"></span>
+    </div>
+    <div class="product-grid" id="grid-bestsellers"></div>
+  </section>
+
+  <!-- ===================== PERFUMES ===================== -->
+  <section class="product-section" id="perfumes" data-section="perfumes">
+    <div class="section-heading">
+      <p class="eyebrow">🌸 Perfumes</p>
+      <h2>Fragrance, considered</h2>
+      <span class="gold-rule"></span>
+    </div>
+    <div class="product-grid" id="grid-perfumes"></div>
+  </section>
+
+  <!-- ===================== EDITORIAL BREAK 1 ===================== -->
+  <section class="editorial" style="--editorial-img: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1600&auto=format&fit=crop');">
+    <div class="editorial__overlay"></div>
+    <div class="editorial__content">
+      <p class="editorial__quote">&ldquo;Beauty isn&rsquo;t a routine. It&rsquo;s a way of paying attention.&rdquo;</p>
+      <p class="editorial__attribution">— The Romaza Journal</p>
+    </div>
+  </section>
+
+  <!-- ===================== MAKEUP ===================== -->
+  <section class="product-section" id="makeup" data-section="makeup">
+    <div class="section-heading">
+      <p class="eyebrow">💄 Makeup</p>
+      <h2>Colour that finishes a look</h2>
+      <span class="gold-rule"></span>
+    </div>
+    <div class="product-grid" id="grid-makeup"></div>
+  </section>
+
+  <!-- ===================== OFFERS ===================== -->
+  <section class="product-section" id="offers" data-section="offers">
+    <div class="section-heading">
+      <p class="eyebrow">🔥 Offers</p>
+      <h2>Limited-time favourites</h2>
+      <span class="gold-rule"></span>
+    </div>
+    <div class="product-grid" id="grid-offers"></div>
+  </section>
+
+  <!-- ===================== BAGS ===================== -->
+  <section class="product-section" id="bags" data-section="bags">
+    <div class="section-heading">
+      <p class="eyebrow">👜 Bags</p>
+      <h2>Carried with intention</h2>
+      <span class="gold-rule"></span>
+    </div>
+    <div class="product-grid" id="grid-bags"></div>
+  </section>
+
+  <!-- ===================== EDITORIAL BREAK 2 ===================== -->
+  <section class="editorial editorial--tall" style="--editorial-img: url('https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1600&auto=format&fit=crop');">
+    <div class="editorial__overlay"></div>
+    <div class="editorial__content">
+      <p class="editorial__quote">&ldquo;Every detail is chosen. Nothing is filler.&rdquo;</p>
+      <p class="editorial__attribution">— The Romaza Promise</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="navbar__logo footer__logo">Romaza<span class="navbar__logo-dot">.</span>Store</span>
+      <p class="footer__tagline">Beauty • Fragrance • Cosmetics</p>
+      <p class="footer__line">Curated fragrance, makeup and bags — ordered directly through WhatsApp, no account required.</p>
+    </div>
+    <div class="footer__contact">
+      <p class="footer__heading">Contact</p>
+      <a href="https://wa.me/201124213122" target="_blank" rel="noopener noreferrer">WhatsApp: +20 112 421 3122</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>&copy; <span id="footerYear"></span> Romaza.Store. All rights reserved.</p>
+    <button class="footer__admin-link" id="adminLinkBtn">Admin</button>
+  </div>
+</footer>
+
+<!-- ===================== WHATSAPP FLOATING BUTTON ===================== -->
+<a
+  class="whatsapp-fab"
+  id="whatsappFab"
+  href="https://wa.me/201124213122?text=Hi%20Romaza.Store%2C%20I%27d%20like%20to%20ask%20about%20your%20products."
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat with us on WhatsApp"
+>
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.01 3C9.38 3 4 8.38 4 15.01c0 2.31.64 4.47 1.75 6.32L4 29l7.86-1.71a11.94 11.94 0 0 0 4.15.74h.01c6.63 0 12.01-5.38 12.01-12.01C27.03 8.38 21.65 3 16.01 3Zm0 21.6h-.01a9.57 9.57 0 0 1-4.87-1.33l-.35-.21-3.87.84.82-3.78-.23-.39a9.56 9.56 0 0 1-1.47-5.12c0-5.3 4.32-9.62 9.63-9.62 2.57 0 4.98 1 6.8 2.82a9.57 9.57 0 0 1 2.82 6.8c0 5.3-4.32 9.62-9.63 9.62-.15.03-.29.03-.44.03Zm5.28-7.21c-.29-.15-1.71-.85-1.97-.94-.27-.1-.46-.15-.65.14-.19.29-.75.94-.92 1.13-.17.19-.34.22-.63.07-.29-.15-1.22-.45-2.32-1.44a8.69 8.69 0 0 1-1.61-2.01c-.17-.29-.02-.44.13-.59.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.65-1.58-.9-2.16-.24-.57-.48-.5-.65-.5-.17 0-.36-.03-.55-.03-.19 0-.51.07-.77.36-.27.29-1.01.99-1.01 2.42s1.04 2.81 1.18 3c.15.19 2.04 3.12 4.94 4.37.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.11.55-.08 1.71-.7 1.95-1.37.24-.68.24-1.26.17-1.38-.07-.13-.26-.2-.55-.34Z"/></svg>
+</a>
+
+<!-- ===================== PRODUCT MODAL ===================== -->
+<div class="modal-overlay" id="productModalOverlay">
+  <div class="modal product-modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="productModalName">
+    <button class="modal__close" id="productModalClose" aria-label="Close">&times;</button>
+    <div class="product-modal__media">
+      <img id="productModalImg" src="" alt="" />
+    </div>
+    <div class="product-modal__panel">
+      <div class="product-modal__badges" id="productModalBadges"></div>
+      <h3 id="productModalName" class="product-modal__name"></h3>
+      <span class="gold-rule gold-rule--left"></span>
+      <p id="productModalDesc" class="product-modal__desc"></p>
+      <div class="product-modal__price" id="productModalPrice"></div>
+      <button class="btn btn--gold btn--block" id="productModalOrderBtn">Order via WhatsApp</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== WHATSAPP ORDER MODAL ===================== -->
+<div class="modal-overlay" id="orderModalOverlay">
+  <div class="modal order-modal" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="orderModalTitle">
+    <button class="modal__close" id="orderModalClose" aria-label="Close">&times;</button>
+    <h3 id="orderModalTitle">Order via WhatsApp</h3>
+    <p class="order-modal__product" id="orderModalProductLine"></p>
+    <span class="gold-rule gold-rule--left"></span>
+    <form id="orderForm" autocomplete="off">
+      <label class="field">
+        <span>Full Name</span>
+        <input type="text" id="orderName" name="orderName" required autocomplete="off" />
+      </label>
+      <label class="field">
+        <span>Phone Number</span>
+        <input type="tel" id="orderPhone" name="orderPhone" required autocomplete="off" />
+      </label>
+      <label class="field">
+        <span>Address</span>
+        <input type="text" id="orderAddress" name="orderAddress" required autocomplete="off" />
+      </label>
+      <button type="submit" class="btn btn--gold btn--block">Send Order on WhatsApp</button>
+      <p class="order-modal__note">This information is only used to build your WhatsApp message. It is never saved.</p>
+    </form>
+  </div>
+</div>
+
+<!-- ===================== ADMIN LOGIN MODAL ===================== -->
+<div class="modal-overlay" id="adminLoginOverlay">
+  <div class="modal admin-login-modal" id="adminLoginModal" role="dialog" aria-modal="true" aria-labelledby="adminLoginTitle">
+    <button class="modal__close" id="adminLoginClose" aria-label="Close">&times;</button>
+    <h3 id="adminLoginTitle">Admin Access</h3>
+    <span class="gold-rule gold-rule--left"></span>
+    <form id="adminLoginForm" autocomplete="off">
+      <label class="field">
+        <span>Password</span>
+        <input type="password" id="adminPassword" name="adminPassword" required autocomplete="new-password" />
+      </label>
+      <p class="admin-login-modal__error" id="adminLoginError" hidden>Incorrect password. Please try again.</p>
+      <button type="submit" class="btn btn--gold btn--block">Enter</button>
+    </form>
+  </div>
+</div>
+
+<!-- ===================== ADMIN PANEL ===================== -->
+<div class="admin-overlay" id="adminOverlay">
+  <div class="admin-panel">
+    <div class="admin-panel__header">
+      <h2>Admin Dashboard</h2>
+      <div class="admin-panel__header-actions">
+        <button class="btn btn--outline" id="adminAddBtn">+ Add Product</button>
+        <button class="btn btn--ghost" id="adminLogoutBtn">Close</button>
+      </div>
+    </div>
+
+    <div class="admin-panel__list" id="adminProductList"></div>
+  </div>
+</div>
+
+<!-- ===================== ADMIN PRODUCT FORM MODAL ===================== -->
+<div class="modal-overlay" id="productFormOverlay">
+  <div class="modal product-form-modal" id="productFormModal" role="dialog" aria-modal="true" aria-labelledby="productFormTitle">
+    <button class="modal__close" id="productFormClose" aria-label="Close">&times;</button>
+    <h3 id="productFormTitle">Add Product</h3>
+    <span class="gold-rule gold-rule--left"></span>
+    <form id="productForm" autocomplete="off">
+      <input type="hidden" id="productFormId" />
+
+      <label class="field">
+        <span>Image URL or file path</span>
+        <input type="text" id="productFormImage" placeholder="https://... or assets/photo.jpg" required />
+      </label>
+
+      <div class="field-row">
+        <div class="field-row__preview" id="productFormPreviewWrap">
+          <img id="productFormPreview" alt="Preview" />
+        </div>
+        <div class="field-row__fields">
+          <label class="field">
+            <span>Name</span>
+            <input type="text" id="productFormName" required />
+          </label>
+          <label class="field">
+            <span>Price (EGP)</span>
+            <input type="number" id="productFormPrice" min="0" step="0.01" required />
+          </label>
+        </div>
+      </div>
+
+      <label class="field">
+        <span>Description</span>
+        <textarea id="productFormDesc" rows="3" required></textarea>
+      </label>
+
+      <fieldset class="field-fieldset">
+        <legend>Categories</legend>
+        <div class="checkbox-row">
+          <label class="checkbox"><input type="checkbox" id="catPerfumes" value="perfumes" /> 🌸 Perfumes</label>
+          <label class="checkbox"><input type="checkbox" id="catMakeup" value="makeup" /> 💄 Makeup</label>
+          <label class="checkbox"><input type="checkbox" id="catBags" value="bags" /> 👜 Bags</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="field-fieldset">
+        <legend>Offer</legend>
+        <label class="checkbox">
+          <input type="checkbox" id="offerActive" /> 🔥 Mark as an active offer
+        </label>
+        <label class="field field--offer-price" id="offerPriceWrap" hidden>
+          <span>Discounted Price (EGP)</span>
+          <input type="number" id="offerPrice" min="0" step="0.01" />
+        </label>
+      </fieldset>
+
+      <div class="admin-panel__click-count" id="productFormClickCount" hidden>
+        <span>⭐ Best-Seller clicks:</span> <strong id="productFormClickValue">0</strong>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn btn--ghost" id="productFormCancel">Cancel</button>
+        <button type="submit" class="btn btn--gold">Save Product</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- toast for confirmations -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="products.js"></script>
+<script src="Storege.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
