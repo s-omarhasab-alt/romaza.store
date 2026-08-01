@@ -22,7 +22,7 @@ const SEED_PRODUCTS = [
     name: "Velours Noir",
     description: "A smoky oud and dark vanilla eau de parfum, built for evenings that linger. Long-lasting and unmistakably confident.",
     price: 2450,
-    image: "https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=900&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1543422655-ac1c6ca993ed?q=80&w=900&auto=format&fit=crop",
     categories: ["perfumes"],
     offer: { active: false, price: null }
   },
@@ -40,7 +40,7 @@ const SEED_PRODUCTS = [
     name: "Ambre Royale",
     description: "Warm amber, cedarwood and a whisper of saffron. A signature scent that fills a room gently.",
     price: 2890,
-    image: "https://images.unsplash.com/photo-1615368144592-04a26956db9b?q=80&w=900&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1709662217618-83586dc9b777?q=80&w=900&auto=format&fit=crop",
     categories: ["perfumes"],
     offer: { active: false, price: null }
   },
@@ -117,6 +117,15 @@ const SEED_PRODUCTS = [
     offer: { active: false, price: null }
   },
   {
+    id: "p-013",
+    name: "Structured Shoulder Bag — Espresso",
+    description: "Polished grain leather in a clean, boxy silhouette with a detachable strap. Sits perfectly between an office bag and an evening piece.",
+    price: 2380,
+    image: "https://images.unsplash.com/photo-1542086490-11a8654691d0?q=80&w=900&auto=format&fit=crop",
+    categories: ["bags"],
+    offer: { active: false, price: null }
+  },
+  {
     id: "p-012",
     name: "Satin Lip Gloss — Rosewood",
     description: "A non-sticky, high-shine gloss with a hint of natural tint. Comfortable for all-day wear.",
@@ -126,6 +135,7 @@ const SEED_PRODUCTS = [
     offer: { active: false, price: null }
   }
 ];
+
 
 // Editorial / hero fallback images (used only if the primary URL fails to load)
 const FALLBACK_EDITORIAL_GRADIENT_ONLY = true; // signals app.js to use CSS gradient fallback, not another photo

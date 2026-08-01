@@ -73,7 +73,10 @@
   const productFormTitle = $("#productFormTitle");
   const productFormId = $("#productFormId");
   const productFormImage = $("#productFormImage");
-  const productFormPreview = $("#productFormPreview");
+  const productFormImageFile = $("#productFormImageFile");
+  const productFormImageFileLabel = $("#productFormImageFileLabel");
+  const toggleImageUrlMode = $("#toggleImageUrlMode");
+  const productFormImageUrlWrap = $("#productFormImageUrlWrap");
   const productFormName = $("#productFormName");
   const productFormPrice = $("#productFormPrice");
   const productFormDesc = $("#productFormDesc");
@@ -85,6 +88,9 @@
   const offerPrice = $("#offerPrice");
   const productFormClickCount = $("#productFormClickCount");
   const productFormClickValue = $("#productFormClickValue");
+
+  const adminExportBtn = $("#adminExportBtn");
+  const adminImportFile = $("#adminImportFile");
 
   const toast = $("#toast");
 
