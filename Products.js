@@ -116,15 +116,7 @@ const SEED_PRODUCTS = [
     categories: ["bags"],
     offer: { active: false, price: null }
   },
-  {
-    id: "p-013",
-    name: "Structured Shoulder Bag — Espresso",
-    description: "Polished grain leather in a clean, boxy silhouette with a detachable strap. Sits perfectly between an office bag and an evening piece.",
-    price: 2380,
-    image: "https://images.unsplash.com/photo-1542086490-11a8654691d0?q=80&w=900&auto=format&fit=crop",
-    categories: ["bags"],
-    offer: { active: false, price: null }
-  },
+  
   {
     id: "p-012",
     name: "Satin Lip Gloss — Rosewood",
@@ -133,9 +125,17 @@ const SEED_PRODUCTS = [
     image: "https://images.unsplash.com/photo-1571646750134-8e7d19b7db78?q=80&w=900&auto=format&fit=crop",
     categories: ["makeup"],
     offer: { active: false, price: null }
-  }
+  },
+{
+    id: "p-013",
+    name: "Structured Shoulder Bag — Espresso",
+    description: "Polished grain leather in a clean, boxy silhouette with a detachable strap. Sits perfectly between an office bag and an evening piece.",
+    price: 2380,
+    image: "https://images.unsplash.com/photo-1542086490-11a8654691d0?q=80&w=900&auto=format&fit=crop",
+    categories: ["bags"],
+    offer: { active: false, price: null }
+  },
 ];
-
 
 // Editorial / hero fallback images (used only if the primary URL fails to load)
 const FALLBACK_EDITORIAL_GRADIENT_ONLY = true; // signals app.js to use CSS gradient fallback, not another photo
