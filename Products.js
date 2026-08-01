@@ -22,7 +22,7 @@ const SEED_PRODUCTS = [
     name: "Velours Noir",
     description: "A smoky oud and dark vanilla eau de parfum, built for evenings that linger. Long-lasting and unmistakably confident.",
     price: 2450,
-    image: "https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=900&auto=format&fit=crop",
+    image: "img/img1.jpg",
     categories: ["perfumes"],
     offer: { active: false, price: null }
   },
@@ -126,6 +126,7 @@ const SEED_PRODUCTS = [
     offer: { active: false, price: null }
   }
 ];
+
 
 // Editorial / hero fallback images (used only if the primary URL fails to load)
 const FALLBACK_EDITORIAL_GRADIENT_ONLY = true; // signals app.js to use CSS gradient fallback, not another photo
